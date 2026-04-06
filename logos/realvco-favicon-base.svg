@@ -9,14 +9,18 @@
 <path d="M128 256C198.692 256 256 198.692 256 128C256 57.3075 198.692 0 128 0C57.3075 0 0 57.3075 0 128C0 198.692 57.3075 256 128 256Z" fill="#999999"/>
 </mask>
 <g mask="url(#mask1_5060_361)">
-<path d="M98.4276 192L0 0H65.7655L128.883 127.877L191.559 0H256L157.131 192H98.4276Z" fill="#555555"/>
+<path d="M98.4276 192L0 0H65.7655L128.883 127.877L191.559 0H256L157.131 192H98.4276Z" fill="url(#paint1_linear_5060_361)"/>
 </g>
 </g>
 </g>
 <defs>
 <linearGradient id="paint0_linear_5060_361" x1="128" y1="0" x2="128" y2="256" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BBFF55"/>
-<stop offset="0.75" stop-color="#88EE22"/>
+<stop stop-color="#BBFF88"/>
+<stop offset="0.8" stop-color="#88EE22"/>
+</linearGradient>
+<linearGradient id="paint1_linear_5060_361" x1="128" y1="0" x2="128" y2="192" gradientUnits="userSpaceOnUse">
+<stop offset="0.3" stop-color="#555555"/>
+<stop offset="1" stop-color="#BBBBBB" stop-opacity="0.6"/>
 </linearGradient>
 <clipPath id="clip0_5060_361">
 <rect width="256" height="256" fill="white"/>
