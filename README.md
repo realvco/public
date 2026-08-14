@@ -19,7 +19,7 @@ Previews below switch with your GitHub theme — you are seeing the variant mean
 
 ### Lockup — horizontal
 
-The primary mark. Symbol and wordmark share the same cap height and sit on the same baseline. Ink box **450 × 75**, a clean **6 : 1** — so the width is always the height × 6.
+The primary mark. Symbol and wordmark share the same cap height and sit on the same baseline. Ink box **360 × 60**, a clean **6 : 1** — so the width is always the height × 6.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="realvco-lockup-260813.svg">
@@ -41,7 +41,9 @@ For square-ish slots: app splash screens, slide covers, social profiles. Ink box
 
 ### Symbol only
 
-The letter **v** lifted out of the wordmark, widened and thickened so it survives at small sizes, with two cursor dots tucked into the empty wedge under the right arm. Use it where the brand name already appears elsewhere. Ink box **279.572 × 192**.
+The letter **v** lifted out of the wordmark, widened and thickened so it survives at small sizes, with two cursor dots tucked into the empty wedge under the right arm. Use it where the brand name already appears elsewhere.
+
+Canvas **300 × 200** (3:2) with the symbol centred at 80% height — **the padding is already built in**, so do not add your own or you will get a double margin. The symbol itself measures 233 × 160 inside that canvas.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="realvco-mark-260813.svg">
@@ -123,7 +125,8 @@ A logotype is exempt from WCAG text-contrast rules, so these greens are more sat
 
 - Leave at least the width of one symbol stroke around the lockup.
 - Horizontal lockup: do not go below **20 px** tall (120 px wide).
-- Symbol on its own: below **24 px** the two dots start to merge. At 16 px prefer the `.ico`, or drop the dots.
+- Symbol on its own: the file includes padding, so below **32 px** of rendered box height the two dots start to merge. At 16 px prefer the `.ico`, or drop the dots.
+- Because the symbol canvas is 3:2, give it a 3:2 box. Setting both `width` and `height` to the same value stretches it — there is no `object-fit` fallback on a bare `<img>`.
 - Do not recolour, rotate, add effects to, or re-space the lockup. Scale it as a whole.
 
 ---
