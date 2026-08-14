@@ -65,13 +65,20 @@ No symbol. For tight horizontal space, or when the symbol is already shown nearb
 
 ### Favicon
 
-**One file for both themes.** It carries an embedded `prefers-color-scheme` rule, so it recolours itself — you do not pick a variant.
+All three are 256 × 256, with the symbol inset 2 px from the left and right edges.
 
-<img src="realvco-favicon-260813.svg" alt="realvco favicon" width="96">
+**`realvco-favicon-auto-260813.svg` — one file for both themes.** It carries an embedded `prefers-color-scheme` rule, so it recolours itself. This is the one to put in a browser tab. Read the callout below before using it anywhere else.
 
-`realvco-favicon-260813.svg` — 256 × 256, symbol inset 2 px from the left and right edges
+<img src="realvco-favicon-auto-260813.svg" alt="realvco favicon, theme-switching" width="96">
 
-`realvco-favicon-260813.ico` — raster fallback for older browsers, 16/32/48/64 px. Static (no theme switching); it uses the light-background palette because that is the set with the better worst case across tab-bar colours.
+**`realvco-favicon-260813.svg` / `realvco-favicon-260813-light.svg` — fixed colours, no switching.** Same geometry, palette baked in. Use these wherever the background is pinned to a known colour, or wherever an embedded `<style>` block would be stripped or ignored.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="realvco-favicon-260813.svg">
+  <img src="realvco-favicon-260813-light.svg" alt="realvco favicon, fixed colours" width="96">
+</picture>
+
+`realvco-favicon-260813.ico` — raster fallback for older browsers, 16/32/48/64 px. Static; it uses the light-background palette because that is the set with the better worst case across tab-bar colours.
 
 ### Favicon — reinstall state
 
@@ -87,7 +94,8 @@ Same symbol with a red status dot. Used by the admin console while a machine is 
 
 | I need… | File |
 |---|---|
-| Browser tab icon | `realvco-favicon-260813.svg` |
+| Browser tab icon | `realvco-favicon-auto-260813.svg` |
+| Small square icon on a fixed background | `realvco-favicon-260813(-light).svg` |
 | Logo in a header or footer | `realvco-lockup-260813(-light).svg` |
 | Square slot — app icon, avatar, splash | `realvco-lockup-stacked-260813(-light).svg` or the symbol |
 | Just the symbol | `realvco-mark-260813(-light).svg` |
@@ -96,8 +104,8 @@ Same symbol with a red status dot. Used by the admin console while a machine is 
 **Pick `-light` for light backgrounds, the plain name for dark backgrounds.**
 
 > [!IMPORTANT]
-> **Do not use `realvco-favicon-260813.svg` in a slot with a hard-coded background colour.**
-> Its `prefers-color-scheme` rule follows the *reader's operating system theme*, not the colour it happens to be sitting on. In a browser tab those two almost always agree, which is why it is right for a favicon. Drop it onto a panel whose background is pinned to a dark colour and a reader on a light-themed OS will get the dark-on-dark version. For fixed backgrounds use the two-file `-mark-` / `-lockup-` pair instead.
+> **Do not use `realvco-favicon-auto-260813.svg` in a slot with a hard-coded background colour.**
+> Its `prefers-color-scheme` rule follows the *reader's operating system theme*, not the colour it happens to be sitting on. In a browser tab those two almost always agree, which is why it is right for a favicon. Drop it onto a panel whose background is pinned to a dark colour and a reader on a light-themed OS will get the dark-on-dark version. For fixed backgrounds use `realvco-favicon-260813(-light).svg`, or the `-mark-` / `-lockup-` pairs.
 
 ---
 
