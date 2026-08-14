@@ -69,7 +69,7 @@ No symbol. For tight horizontal space, or when the symbol is already shown nearb
 
 <img src="realvco-favicon-260813.svg" alt="realvco favicon" width="96">
 
-`realvco-favicon-260813.svg` — 256 × 256
+`realvco-favicon-260813.svg` — 256 × 256, symbol inset 2 px from the left and right edges
 
 `realvco-favicon-260813.ico` — raster fallback for older browsers, 16/32/48/64 px. Static (no theme switching); it uses the light-background palette because that is the set with the better worst case across tab-bar colours.
 
@@ -107,14 +107,14 @@ Same symbol with a red status dot. Used by the admin console while a machine is 
 |---|---|---|
 | Symbol — left arm | `#22EE88` | `#005e58` |
 | Symbol — right arm | `#098658` | `#15B97C` |
-| Symbol — dots | `#7CFFBE` | `#005e58` |
+| Symbol — dots | `#22EE88` | `#005e58` |
 | Wordmark "vco" | `#22EE88` | `#005e58` |
 | Wordmark "real" | `#f2f6f5` | `#13221F` |
 
 Three rules worth knowing:
 
 - **The left arm is always the higher-contrast face** — bright green on dark, deep teal on light. The two arms sit at a fixed 3.0× contrast ratio in both themes, so the facet reads with the same strength either way.
-- **"vco" always matches the left arm.** That pairing is deliberate.
+- **The dots and "vco" both take the left-arm colour exactly.** Three elements, two greens: the left arm (shared by dots and wordmark) and the right arm behind it.
 - The two "real" neutrals are the same teal hue family (165° / 168°), so neither theme drifts cool.
 
 A logotype is exempt from WCAG text-contrast rules, so these greens are more saturated than the ones used for interface text. If the green in a logo does not match the green on a button, that is intended.
