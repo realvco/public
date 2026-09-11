@@ -9,7 +9,7 @@ Public mirror of the realvco logo, mark, lockups and favicons. Logo 原檔為 SV
 
 **Direct link:** `https://raw.githubusercontent.com/realvco/public/main/<filename>`
 
-正式向量素材放在**根目錄**。新版分享圖沿用 `images/realvco-og.png` 的既有網址；`logos/` 與 `images/` 的其他既有素材保持不變。
+正式素材放在**根目錄**，包含新版分享圖 `realvco-og.png` 與向量原稿 `realvco-og.svg`。既有網址 `images/realvco-og.png` 保留相同新版圖片；`logos/` 與 `images/` 的其他既有素材保持不變。
 
 ---
 
@@ -65,9 +65,9 @@ No symbol. For tight horizontal space, or when the symbol is already shown nearb
 
 ### 社群分享圖
 
-![realvco — Your AI Partner. Ready.](images/realvco-og.png)
+![realvco — Your AI Partner. Ready.](realvco-og.png)
 
-`images/realvco-og.png` — **1200 × 630**，使用 v2.5 深色背景版橫式 Logo，保留原標語與背景色，取代舊版龍蝦角色分享圖。既有網址不變。
+`realvco-og.png` — **1200 × 630**，使用 v2.5 深色背景版橫式 Logo，保留原標語與背景色，取代舊版龍蝦角色分享圖。根目錄為主要使用位置；`images/realvco-og.png` 保留完全相同的圖片，讓既有連結持續可用。
 
 `realvco-og.svg` — 可編輯的向量原稿；Logo 路徑、比例與配色直接取自 `realvco-lockup-260813.svg`，標語使用 Arial。PNG 已完成輸出，可直接用於社群分享。
 
@@ -102,7 +102,7 @@ Same symbol with a red status dot. Used by the admin console while a machine is 
 
 | I need… | File |
 |---|---|
-| 社群分享預覽 | `images/realvco-og.png`；向量原稿 `realvco-og.svg` |
+| 社群分享預覽 | 根目錄 `realvco-og.png`；向量原稿 `realvco-og.svg` |
 | Browser tab icon | `realvco-favicon-auto-260813.svg` |
 | Small square icon on a fixed background | `realvco-favicon-260813(-light).svg` |
 | Logo in a header or footer | `realvco-lockup-260813(-light).svg` |
