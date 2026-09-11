@@ -178,7 +178,14 @@ Kept for backwards compatibility. **Do not use these for anything new.**
 
 ### CRM／Panel 專用圖示
 
-沿用正式 v2.5 標誌，以小徽章區分用途：CRM 為人物，Panel 為儀表板方格。這兩種圖示不表示錯誤或重裝狀態；重裝狀態仍使用既有 `realvco-favicon-reinstall-260813.svg`。
+沿用 CRM 與 AdminPanel 現用設計：保留正式 v2.5 標誌的大小、位置與兩臂配色，**只改兩個圓點的顏色**區分用途。CRM 使用紅點；AdminPanel 使用白點／深灰點，不加其他圖形。
+
+| 用途 | 深色背景圓點 | 淺色背景圓點 |
+|---|---|---|
+| CRM | `#ee1100` | `#bb1100` |
+| AdminPanel | `#F2F6F5` | `#161A19` |
+
+這是應用程式圖示的配色例外；一般品牌標誌的圓點仍與左臂同色。重裝狀態仍使用既有 `realvco-favicon-reinstall-260813.svg`，不與應用程式識別混用。
 
 | 用途 | 深色背景 | 淺色背景 |
 |---|---|---|

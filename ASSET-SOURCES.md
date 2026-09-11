@@ -8,8 +8,11 @@
 
 - 依據根目錄正式 v2.5 SVG 與 README 色票。
 - 一般 PNG 由同名 SVG 以原尺寸四倍輸出；保留透明背景與原始比例。
-- CRM／Panel 的 SVG 內嵌原 favicon 圖形，只做整體等比例縮放與移動，另加人物／方格徽章；沒有改動標誌內部路徑、配色或間距。
-- 深色背景：左臂與圓點 #22EE88，右臂 #098658。淺色背景：左臂與圓點 #005e58，右臂 #15B97C。
+- CRM／AdminPanel 的 SVG 與正式 favicon 保持完全相同的圖形、大小、位置與兩臂配色，僅替換兩個 circle 的 fill。沒有縮小標誌、移動標誌或附加徽章。
+- 一般品牌圖示：深色背景左臂與圓點 #22EE88、右臂 #098658；淺色背景左臂與圓點 #005e58、右臂 #15B97C。
+- CRM 現用圖檔：[favicon.svg](https://rvadmin.realvco.com/favicon.svg)，從已登入瀏覽器唯讀核對 SVG 樣式；深色背景圓點 #ee1100，淺色背景 #bb1100。
+- AdminPanel 現用圖檔：[favicon.svg](https://7eu-demo-00.realvco.com/img/favicon.svg?v=v26.0819.001)；深色背景圓點 #F2F6F5，淺色背景 #161A19。
+- 靜態深淺 SVG 分別對應現用自動配色 SVG 的兩種模式；SVG／PNG 皆同步更新，未變更線上 CRM 或 AdminPanel 程式。
 - PNG 輸出使用 Sharp；未使用生成式工具重新繪製 Logo。
 - 正式 favicon PNG 為固定色版；沒有將自動切色 SVG 的單次輸出誤稱成自動切色 PNG。
 
