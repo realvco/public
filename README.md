@@ -176,14 +176,15 @@ Kept for backwards compatibility. **Do not use these for anything new.**
 
 以上 PNG 直接由同名正式 SVG 輸出，標誌外形、配色與內部間距保持一致。瀏覽器分頁仍可優先使用上方的 SVG／ICO。
 
-### CRM／Panel 專用圖示
+### CRM／AdminPanel／RVC（RVM）專用圖示
 
-沿用 CRM 與 AdminPanel 現用設計：保留正式 v2.5 標誌的大小、位置與兩臂配色，**只改兩個圓點的顏色**區分用途。CRM 使用紅點；AdminPanel 使用白點／深灰點，不加其他圖形。
+沿用各站現用設計：保留正式 v2.5 標誌的大小、位置與兩臂配色，**只改兩個圓點的顏色**區分用途。CRM 使用紅點；AdminPanel 使用白點／深灰點；RVC 與 RVM 共用橘點版本，不加其他圖形。
 
 | 用途 | 深色背景圓點 | 淺色背景圓點 |
 |---|---|---|
 | CRM | `#ee1100` | `#bb1100` |
 | AdminPanel | `#F2F6F5` | `#161A19` |
+| RVC／RVM | `#ff8811` | `#dd7711` |
 
 這是應用程式圖示的配色例外；一般品牌標誌的圓點仍與左臂同色。重裝狀態仍使用既有 `realvco-favicon-reinstall-260813.svg`，不與應用程式識別混用。
 
@@ -191,6 +192,7 @@ Kept for backwards compatibility. **Do not use these for anything new.**
 |---|---|---|
 | CRM | [SVG](realvco-favicon-crm-260911.svg) · [PNG](realvco-favicon-crm-260911.png) | [SVG](realvco-favicon-crm-260911-light.svg) · [PNG](realvco-favicon-crm-260911-light.png) |
 | Panel | [SVG](realvco-favicon-panel-260911.svg) · [PNG](realvco-favicon-panel-260911.png) | [SVG](realvco-favicon-panel-260911-light.svg) · [PNG](realvco-favicon-panel-260911-light.png) |
+| RVC／RVM（共用） | [SVG](realvco-favicon-rvc-260911.svg) · [PNG](realvco-favicon-rvc-260911.png) | [SVG](realvco-favicon-rvc-260911-light.svg) · [PNG](realvco-favicon-rvc-260911-light.png) |
 
 SVG 為 256 × 256，PNG 為 1024 × 1024，皆為固定配色。
 
