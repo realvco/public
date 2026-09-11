@@ -5,11 +5,11 @@
 
 # realvco brand assets
 
-Public mirror of the realvco logo, mark, lockups and favicons. Everything here is a plain SVG (plus one `.ico`) — no build step, no dependencies.
+Public mirror of the realvco logo, mark, lockups and favicons. Logo 原檔為 SVG，另提供 `.ico` 與分享圖 PNG；使用這些素材不需要建置或安裝套件。
 
 **Direct link:** `https://raw.githubusercontent.com/realvco/public/main/<filename>`
 
-Current assets live in the **repo root**. The `logos/` and `images/` folders hold the previous generation and are kept only so existing links keep working.
+正式素材放在**根目錄**，包含新版分享圖 `realvco-og.png` 與向量原稿 `realvco-og.svg`。既有網址 `images/realvco-og.png` 保留相同新版圖片；`logos/` 與 `images/` 的其他既有素材保持不變。
 
 ---
 
@@ -63,6 +63,14 @@ No symbol. For tight horizontal space, or when the symbol is already shown nearb
 
 `realvco-logo-260813.svg` · `realvco-logo-260813-light.svg`
 
+### 社群分享圖
+
+![realvco — Your AI Partner. Ready.](realvco-og.png)
+
+`realvco-og.png` — **1200 × 630**，使用 v2.5 深色背景版橫式 Logo，保留原標語與背景色，取代舊版龍蝦角色分享圖。根目錄為主要使用位置；`images/realvco-og.png` 保留完全相同的圖片，讓既有連結持續可用。
+
+`realvco-og.svg` — 可編輯的向量原稿；Logo 路徑、比例與配色直接取自 `realvco-lockup-260813.svg`，標語使用 Arial。PNG 已完成輸出，可直接用於社群分享。
+
 ### Favicon
 
 All three are 256 × 256, with the symbol inset 2 px from the left and right edges.
@@ -94,6 +102,7 @@ Same symbol with a red status dot. Used by the admin console while a machine is 
 
 | I need… | File |
 |---|---|
+| 社群分享預覽 | 根目錄 `realvco-og.png`；向量原稿 `realvco-og.svg` |
 | Browser tab icon | `realvco-favicon-auto-260813.svg` |
 | Small square icon on a fixed background | `realvco-favicon-260813(-light).svg` |
 | Logo in a header or footer | `realvco-lockup-260813(-light).svg` |
@@ -143,16 +152,65 @@ A logotype is exempt from WCAG text-contrast rules, so these greens are more sat
 
 Kept for backwards compatibility. **Do not use these for anything new.**
 
-`logos/` — earlier wordmark and favicons in the previous bright-green palette, as SVG and PNG. Includes `realvco-logo_woc(-light).svg`, the wordmark with the OpenClaw mascot, which has no v2.5 equivalent yet.
+`logos/` — 舊配色的 Logo 與網站圖示，保留供既有連結使用。包含龍蝦合成 Logo；使用者已裁定不製作新版合成圖。
 
-`images/` — `realvco-og.png` (social preview card), `404.webp`, admin console screenshots, and `openclaw-dark.svg`. The OpenClaw mark keeps its own product colours on purpose and is not part of the realvco palette.
+`images/` — 舊版素材包含 `404.webp`、管理畫面截圖及 `openclaw-dark.svg`；`realvco-og.png` 已更新為 v2.5，詳見上方「社群分享圖」。 The OpenClaw mark keeps its own product colours on purpose and is not part of the realvco palette.
 
-> `logos/realvco-logo-light.png` is still linked from outgoing email templates. It cannot be removed until a v2.5 PNG replaces it.
+> 郵件等既有使用端可能仍引用 `logos/realvco-logo-light.png`。新版 PNG 已在根目錄提供；本次不刪舊檔，也不改動外部網站或郵件設定。
 
 ---
 
-## Not here yet
+## 補齊素材（2026-09-11）
 
-- PNG renders of the v2.5 assets — nothing in the current set is a raster file, so anywhere that cannot take SVG (email bodies, some social platforms, print) still has to fall back to the old logos.
-- A refreshed social preview card and 404 illustration.
-- A v2.5 treatment for the OpenClaw co-branded wordmark, if it is kept.
+以下檔案全部放在**根目錄**。Logo 與圖示 PNG 皆保留透明背景；`-light` 用於淺色背景，沒有 `-light` 的版本用於深色背景。
+
+### Logo 與一般網站圖示 PNG
+
+| 用途 | 深色背景 | 淺色背景 | PNG 尺寸 |
+|---|---|---|---|
+| 純文字 Logo | [PNG](realvco-logo-260813.png) | [PNG](realvco-logo-260813-light.png) | 1200 × 300 |
+| 獨立標誌 | [PNG](realvco-mark-260813.png) | [PNG](realvco-mark-260813-light.png) | 1200 × 800 |
+| 橫式組合 | [PNG](realvco-lockup-260813.png) | [PNG](realvco-lockup-260813-light.png) | 1440 × 240 |
+| 直式組合 | [PNG](realvco-lockup-stacked-260813.png) | [PNG](realvco-lockup-stacked-260813-light.png) | 1200 × 720 |
+| 一般網站圖示 | [PNG](realvco-favicon-260813.png) | [PNG](realvco-favicon-260813-light.png) | 1024 × 1024 |
+
+以上 PNG 直接由同名正式 SVG 輸出，標誌外形、配色與內部間距保持一致。瀏覽器分頁仍可優先使用上方的 SVG／ICO。
+
+### CRM／AdminPanel／RVC（RVM）專用圖示
+
+沿用各站現用設計：保留正式 v2.5 標誌的大小、位置與兩臂配色，**只改兩個圓點的顏色**區分用途。CRM 使用紅點；AdminPanel 使用白點／深灰點；RVC 與 RVM 共用橘點版本，不加其他圖形。
+
+| 用途 | 深色背景圓點 | 淺色背景圓點 |
+|---|---|---|
+| CRM | `#ee1100` | `#bb1100` |
+| AdminPanel | `#F2F6F5` | `#161A19` |
+| RVC／RVM | `#ff8811` | `#dd7711` |
+
+這是應用程式圖示的配色例外；一般品牌標誌的圓點仍與左臂同色。重裝狀態仍使用既有 `realvco-favicon-reinstall-260813.svg`，不與應用程式識別混用。
+
+| 用途 | 深色背景 | 淺色背景 |
+|---|---|---|
+| CRM | [SVG](realvco-favicon-crm-260911.svg) · [PNG](realvco-favicon-crm-260911.png) | [SVG](realvco-favicon-crm-260911-light.svg) · [PNG](realvco-favicon-crm-260911-light.png) |
+| Panel | [SVG](realvco-favicon-panel-260911.svg) · [PNG](realvco-favicon-panel-260911.png) | [SVG](realvco-favicon-panel-260911-light.svg) · [PNG](realvco-favicon-panel-260911-light.png) |
+| RVC／RVM（共用） | [SVG](realvco-favicon-rvc-260911.svg) · [PNG](realvco-favicon-rvc-260911.png) | [SVG](realvco-favicon-rvc-260911-light.svg) · [PNG](realvco-favicon-rvc-260911-light.png) |
+
+SVG 為 256 × 256，PNG 為 1024 × 1024，皆為固定配色。
+
+### 404 插圖
+
+<img src="realvco-404-260911.webp" alt="404：AI 夥伴尋找中斷的路徑" width="420">
+
+[網頁版 WebP](realvco-404-260911.webp) · [PNG 原圖](realvco-404-260911.png)。使用深綠背景、翠綠光線與白色機器人，未加入龍蝦角色。
+
+### 新版管理畫面
+
+擷取自新版管理頁的「今天」總覽，使用示範資料，並以無損 WebP 保存完整頁面。
+
+| 語言 | 深色 | 淺色 |
+|---|---|---|
+| 繁體中文 | [查看截圖](rv-admin-panel-zht-260911.webp) | [查看截圖](rv-admin-panel-zht-w-260911.webp) |
+| English | [查看截圖](rv-admin-panel-en-260911.webp) | [查看截圖](rv-admin-panel-en-w-260911.webp) |
+
+英文版本的介面已切換語言；工作名稱等示範內容保留原始中文，與實際畫面一致。截圖不是另外重畫的介面，也不代表舊版主機總覽畫面。
+
+素材來源、404 生成提示詞與驗證方式見 [ASSET-SOURCES.md](ASSET-SOURCES.md)。Figma 原稿尚未取得，本次未同步至 Figma。
