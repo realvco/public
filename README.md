@@ -5,11 +5,11 @@
 
 # realvco brand assets
 
-Public mirror of the realvco logo, mark, lockups and favicons. Everything here is a plain SVG (plus one `.ico`) — no build step, no dependencies.
+Public mirror of the realvco logo, mark, lockups and favicons. Logo 原檔為 SVG，另提供 `.ico` 與分享圖 PNG；使用這些素材不需要建置或安裝套件。
 
 **Direct link:** `https://raw.githubusercontent.com/realvco/public/main/<filename>`
 
-Current assets live in the **repo root**. The `logos/` and `images/` folders hold the previous generation and are kept only so existing links keep working.
+正式向量素材放在**根目錄**。新版分享圖沿用 `images/realvco-og.png` 的既有網址；`logos/` 與 `images/` 的其他既有素材保持不變。
 
 ---
 
@@ -63,6 +63,14 @@ No symbol. For tight horizontal space, or when the symbol is already shown nearb
 
 `realvco-logo-260813.svg` · `realvco-logo-260813-light.svg`
 
+### 社群分享圖
+
+![realvco — Your AI Partner. Ready.](images/realvco-og.png)
+
+`images/realvco-og.png` — **1200 × 630**，使用 v2.5 深色背景版橫式 Logo，保留原標語與背景色，取代舊版龍蝦角色分享圖。既有網址不變。
+
+`realvco-og.svg` — 可編輯的向量原稿；Logo 路徑、比例與配色直接取自 `realvco-lockup-260813.svg`，標語使用 Arial。PNG 已完成輸出，可直接用於社群分享。
+
 ### Favicon
 
 All three are 256 × 256, with the symbol inset 2 px from the left and right edges.
@@ -94,6 +102,7 @@ Same symbol with a red status dot. Used by the admin console while a machine is 
 
 | I need… | File |
 |---|---|
+| 社群分享預覽 | `images/realvco-og.png`；向量原稿 `realvco-og.svg` |
 | Browser tab icon | `realvco-favicon-auto-260813.svg` |
 | Small square icon on a fixed background | `realvco-favicon-260813(-light).svg` |
 | Logo in a header or footer | `realvco-lockup-260813(-light).svg` |
@@ -145,7 +154,7 @@ Kept for backwards compatibility. **Do not use these for anything new.**
 
 `logos/` — earlier wordmark and favicons in the previous bright-green palette, as SVG and PNG. Includes `realvco-logo_woc(-light).svg`, the wordmark with the OpenClaw mascot, which has no v2.5 equivalent yet.
 
-`images/` — `realvco-og.png` (social preview card), `404.webp`, admin console screenshots, and `openclaw-dark.svg`. The OpenClaw mark keeps its own product colours on purpose and is not part of the realvco palette.
+`images/` — 舊版素材包含 `404.webp`、管理畫面截圖及 `openclaw-dark.svg`；`realvco-og.png` 已更新為 v2.5，詳見上方「社群分享圖」。 The OpenClaw mark keeps its own product colours on purpose and is not part of the realvco palette.
 
 > `logos/realvco-logo-light.png` is still linked from outgoing email templates. It cannot be removed until a v2.5 PNG replaces it.
 
@@ -153,6 +162,6 @@ Kept for backwards compatibility. **Do not use these for anything new.**
 
 ## Not here yet
 
-- PNG renders of the v2.5 assets — nothing in the current set is a raster file, so anywhere that cannot take SVG (email bodies, some social platforms, print) still has to fall back to the old logos.
-- A refreshed social preview card and 404 illustration.
+- 獨立 Logo 的 v2.5 PNG 版本尚未提供；目前提供的 PNG 是完整社群分享圖，不適合作為郵件中的獨立 Logo。
+- 新版 404 插圖。
 - A v2.5 treatment for the OpenClaw co-branded wordmark, if it is kept.
